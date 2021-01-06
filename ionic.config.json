@@ -1,0 +1,7 @@
+{
+  "name": "AddreesBoookApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
