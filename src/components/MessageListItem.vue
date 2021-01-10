@@ -17,7 +17,7 @@
   </ion-item>
 </template>
 
-<script lang="ts">
+<script>
 import { IonIcon, IonItem, IonLabel, IonNote } from '@ionic/vue';
 import { chevronForward } from 'ionicons/icons';
 import { defineComponent } from 'vue';
@@ -35,7 +35,7 @@ export default defineComponent({
   },
   methods: {
     isIos: () => {
-      const win = window as any;
+      const win = window;
       return win && win.Ionic && win.Ionic.mode === 'ios';
     }
   },

@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Inbox</ion-title>
+        <ion-title>Messages</ion-title>
       </ion-toolbar>
     </ion-header>
     
@@ -24,7 +24,7 @@
   </ion-page>
 </template>
 
-<script lang="ts">
+<script>
 import { IonContent, IonHeader, IonList, IonPage, IonRefresher, IonRefresherContent, IonTitle, IonToolbar } from '@ionic/vue';
 import MessageListItem from '@/components/MessageListItem.vue';
 import { defineComponent } from 'vue';
@@ -38,7 +38,7 @@ export default defineComponent({
     }
   },
   methods: {
-    refresh: (ev: CustomEvent) => {
+    refresh: (ev) => {
       setTimeout(() => {
         ev.detail.complete();
       }, 3000);
